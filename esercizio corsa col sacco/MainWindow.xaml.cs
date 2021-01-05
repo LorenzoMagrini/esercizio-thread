@@ -29,11 +29,11 @@ namespace esercizio_corsa_col_sacco
             InitializeComponent();
         }
 
-        public void muoviConcorrente1()
+        public void MuoviConcorrente1()
         {
             int concorrente1 = 195;
 
-            Thread.Sleep(TimeSpan.FromSeconds(0.5));
+            Thread.Sleep(TimeSpan.FromSeconds(0.5)); //A tutti i metodi di movimento viene aggiunto un piccolo TimeSpan per far sì che al ripetersi del click sul pulsante "VIA" al termine della gara corrente, in seguito al riposizionamento dei concorrenti e prima dello svolimento della gara successiva possa passare circa mezzo secondo di "assesto".
 
             while (concorrente1 < 700)
             {
@@ -52,11 +52,11 @@ namespace esercizio_corsa_col_sacco
             }));
         }
 
-        public void muoviConcorrente2()
+        public void MuoviConcorrente2()
         {
             int concorrente2 = 195;
 
-            Thread.Sleep(TimeSpan.FromSeconds(0.5));
+            Thread.Sleep(TimeSpan.FromSeconds(0.5)); //A tutti i metodi di movimento viene aggiunto un piccolo TimeSpan per far sì che al ripetersi del click sul pulsante "VIA" al termine della gara corrente, in seguito al riposizionamento dei concorrenti e prima dello svolimento della gara successiva possa passare circa mezzo secondo di "assesto".
 
             while (concorrente2 < 700)
             {
@@ -75,11 +75,11 @@ namespace esercizio_corsa_col_sacco
             }));
         }
 
-        public void muoviConcorrente3()
+        public void MuoviConcorrente3()
         {
             int concorrente3 = 195;
 
-            Thread.Sleep(TimeSpan.FromSeconds(0.5));
+            Thread.Sleep(TimeSpan.FromSeconds(0.5)); //A tutti i metodi di movimento viene aggiunto un piccolo TimeSpan per far sì che al ripetersi del click sul pulsante "VIA" al termine della gara corrente, in seguito al riposizionamento dei concorrenti e prima dello svolimento della gara successiva possa passare circa mezzo secondo di "assesto".
 
             while (concorrente3 < 700)
             {
@@ -109,16 +109,15 @@ namespace esercizio_corsa_col_sacco
 
             imgConcorrente3.Margin = new Thickness(503, 195, 0, 0);
 
-            Thread t1 = new Thread(new ThreadStart(muoviConcorrente1));
+            Thread t1 = new Thread(new ThreadStart(MuoviConcorrente1));
 
             t1.Start();
 
-            Thread t2 = new Thread(new ThreadStart(muoviConcorrente2));
-
+            Thread t2 = new Thread(new ThreadStart(MuoviConcorrente2));
 
             t2.Start();
 
-            Thread t3 = new Thread(new ThreadStart(muoviConcorrente3));
+            Thread t3 = new Thread(new ThreadStart(MuoviConcorrente3));
 
             t3.Start();
         }
