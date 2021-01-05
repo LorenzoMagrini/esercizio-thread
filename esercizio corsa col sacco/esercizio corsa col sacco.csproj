@@ -100,5 +100,14 @@
   <ItemGroup>
     <Resource Include="concorrente.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sacco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="classifica.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,14 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:esercizio_corsa_col_sacco"
         mc:Ignorable="d"
-        Title="MainWindow" Height="850" Width="1000">
+        Title="MainWindow" Height="950" Width="1000">
     <Grid>
-        <Image x:Name="imgCampo" HorizontalAlignment="Left" Height="733" Margin="330,0,0,0" VerticalAlignment="Top" Width="365" Source="campo.png"/>
-        <Image x:Name="imgConcorrente1" HorizontalAlignment="Left" Height="133" Margin="330,0,0,0" VerticalAlignment="Top" Width="137" RenderTransformOrigin="0.023,0.026" Source="concorrente.png"/>
-        <Image x:Name="imgConcorrente2" HorizontalAlignment="Left" Height="133" Margin="432,0,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.458,0.504" Source="concorrente.png"/>
-        <Image x:Name="imgConcorrente3" HorizontalAlignment="Left" Height="133" Margin="542,0,0,0" VerticalAlignment="Top" Width="129" RenderTransformOrigin="0.525,0.478" Source="concorrente.png"/>
-        <ListBox x:Name="lstClassifica" HorizontalAlignment="Left" Height="376" Margin="700,228,0,0" VerticalAlignment="Top" Width="225"/>
-        <Button Content="PARTI" HorizontalAlignment="Left" Margin="35,340,0,0" VerticalAlignment="Top" Width="257" Height="136" Click="Parti_Click"/>
+        <Image x:Name="imgCampo" HorizontalAlignment="Left" Height="638" Margin="330,195,0,0" VerticalAlignment="Top" Width="365" Source="campo.png" OpacityMask="Black"/>
+        <Image x:Name="imgConcorrente1" HorizontalAlignment="Left" Height="133" Margin="330,195,0,0" VerticalAlignment="Top" Width="137" RenderTransformOrigin="0.023,0.026" Source="concorrente.png"/>
+        <Image x:Name="imgConcorrente2" HorizontalAlignment="Left" Height="133" Margin="417,195,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.458,0.504" Source="concorrente.png"/>
+        <Image x:Name="imgConcorrente3" HorizontalAlignment="Left" Height="133" Margin="503,195,0,0" VerticalAlignment="Top" Width="129" RenderTransformOrigin="0.525,0.478" Source="concorrente.png"/>
+        <ListBox x:Name="lstClassifica" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="376" Margin="695,328,0,0" VerticalAlignment="Top" Width="225" Background="#FF96B87A" BorderBrush="Black"/>
+        <Button Content="VIA" HorizontalAlignment="Left" Margin="37,403,0,0" VerticalAlignment="Top" Width="257" Height="136" Click="Via_Click" FontFamily="SimSun" FontSize="60" Background="#FF96B87A" BorderBrush="Black"/>
+        <Label Content="CLASSIFICA"  HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="695,273,0,0" VerticalAlignment="Top" Height="55" Width="225" FontFamily="SimSun" FontSize="40" Background="#FF96B87A" BorderBrush="Black"/>
+        <Image x:Name="imgLogo" HorizontalAlignment="Left" Height="164" Margin="84,10,0,0" VerticalAlignment="Top" Width="841" Source="logo.png"/>
+        <Image x:Name="imgSacco" HorizontalAlignment="Left" Height="243" Margin="37,590,0,0" VerticalAlignment="Top" Width="257" Source="sacco.jpg"/>
+        <Image x:Name="imgClassifica" HorizontalAlignment="Left" Height="129" Margin="695,753,0,0" VerticalAlignment="Top" Width="225" Source="classifica.jpg" RenderTransformOrigin="0.511,0.513"/>
 
     </Grid>
 </Window>

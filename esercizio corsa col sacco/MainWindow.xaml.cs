@@ -31,11 +31,11 @@ namespace esercizio_corsa_col_sacco
 
         public void muoviConcorrente1()
         {
-            int concorrente1 = 0;
+            int concorrente1 = 195;
 
             Thread.Sleep(TimeSpan.FromSeconds(0.5));
 
-            while (concorrente1 < 600)
+            while (concorrente1 < 700)
             {
                 concorrente1 += 30;
 
@@ -48,17 +48,17 @@ namespace esercizio_corsa_col_sacco
             }
             this.Dispatcher.BeginInvoke(new Action(() =>
             {
-                lstClassifica.Items.Add("concorrente 1");
+                lstClassifica.Items.Add("Gioele (concorrente numero 1)");
             }));
         }
 
         public void muoviConcorrente2()
         {
-            int concorrente2 = 0;
+            int concorrente2 = 195;
 
             Thread.Sleep(TimeSpan.FromSeconds(0.5));
 
-            while (concorrente2 < 600)
+            while (concorrente2 < 700)
             {
                 concorrente2 += 30;
 
@@ -66,22 +66,22 @@ namespace esercizio_corsa_col_sacco
 
                 this.Dispatcher.BeginInvoke(new Action(() =>
                 {
-                    imgConcorrente2.Margin = new Thickness(432,concorrente2 , 0, 0);
+                    imgConcorrente2.Margin = new Thickness(417,concorrente2 , 0, 0);
                 }));
             }
             this.Dispatcher.BeginInvoke(new Action(() =>
             {
-                lstClassifica.Items.Add("concorrente 2");
+                lstClassifica.Items.Add("Riccardo (concorrente numero 2)");
             }));
         }
 
         public void muoviConcorrente3()
         {
-            int concorrente3 = 0;
+            int concorrente3 = 195;
 
             Thread.Sleep(TimeSpan.FromSeconds(0.5));
 
-            while (concorrente3 < 600)
+            while (concorrente3 < 700)
             {
                 concorrente3 += 30;
 
@@ -89,25 +89,25 @@ namespace esercizio_corsa_col_sacco
 
                 this.Dispatcher.BeginInvoke(new Action(() =>
                 {
-                    imgConcorrente3.Margin = new Thickness(542, concorrente3, 0, 0);
+                    imgConcorrente3.Margin = new Thickness(503, concorrente3, 0, 0);
                 }));
             }
             this.Dispatcher.BeginInvoke(new Action(() =>
             {
-                lstClassifica.Items.Add("concorrente 3");
+                lstClassifica.Items.Add("Filippo (concorrente numero 3)");
             }));
         }
 
-        private void Parti_Click(object sender, RoutedEventArgs e)
+        private void Via_Click(object sender, RoutedEventArgs e)
         {
 
             lstClassifica.Items.Clear();
 
-            imgConcorrente1.Margin = new Thickness(330, 0, 0, 0);
+            imgConcorrente1.Margin = new Thickness(330, 195, 0, 0);
 
-            imgConcorrente2.Margin = new Thickness(432, 0, 0, 0);
+            imgConcorrente2.Margin = new Thickness(417, 195, 0, 0);
 
-            imgConcorrente3.Margin = new Thickness(542, 0, 0, 0);
+            imgConcorrente3.Margin = new Thickness(503, 195, 0, 0);
 
             Thread t1 = new Thread(new ThreadStart(muoviConcorrente1));
 
